@@ -107,7 +107,7 @@ require([
 
   // define the earthquakes layer
   const earthquakeLayer = new CSVLayer({
-    url: "./earthquake_data.csv",
+    url: "./earthquake_data_complete_deeper_than_50km.csv",
     elevationInfo: exaggeratedElevation,
     screenSizePerspectiveEnabled: false,
     renderer: {
@@ -133,7 +133,7 @@ require([
           field: "mag",
           axis: "all",
           stops: [
-            { value: 5.5, size: 70000, label: "<15%" },
+            { value: 5.5, size: 7000, label: "<15%" },
             { value: 7, size: 250000, label: "25%" }
           ]
         },
